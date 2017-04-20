@@ -1,0 +1,57 @@
+.navbar-inverse {
+  border: none;
+}
+
+
+/* Hamburger button set to the left */
+.navbar-toggle.pull-left {
+  margin-left: 15px;
+    
+}
+
+
+/*  The right side of the top bar animates down.
+    The middle bar fades out.
+    The right side of the bottom bar animates up. */
+
+.navbar-toggle .icon-bar.bar-one {
+	  top: 6px;
+}
+
+.navbar-toggle .icon-bar.bar-two {
+  	top: 6px;
+}
+
+.navbar-toggle .icon-bar.bar-three {
+	  position: relative;
+	  
+}
+
+.navbar-toggle .icon-bar.bar-one {
+    transition: .2s ease-in-out;
+}
+
+/* Hamburger X */
+.navbar-toggle.open .icon-bar.bar-one {
+	  top:15px;
+	  transform: rotate(155deg);
+}
+
+.navbar-toggle.open .icon-bar.bar-two {
+	   opacity:0;
+	   width:0;
+}
+
+.navbar-toggle.open .icon-bar.bar-three {
+	  top: -12px;
+	  transform: rotate(-155deg);
+}
+
+
+
+
+
+
+
+
+
