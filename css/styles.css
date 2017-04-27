@@ -1,25 +1,85 @@
+/* floral website */
+
 .navbar-inverse {
-  border: none;
+    border: none;
+}
+
+/* padded section services */
+.pad-section {
+    padding: 50px 0;
+    
 }
 
 
+#droph3 {
+    margin-top: 25px;
+    
+}
+
+
+.linebreak {
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 85%;
+    height: 1px;
+    background-color: #fac96c;
+    color: #fac96c;
+    border: 0 none;
+    
+}
+
+
+.linebreak2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 85%;
+    height: 1px;
+    background-color: #fac96c;
+    color: #fac96c;
+    border: 0 none;
+}
+
+
+/* brand logo */
+.navbar-brand {
+    padding-top: 14px;
+    font-family: 'Montez', cursive;
+    font-size: 35px;
+    
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    
+}
+
+
+/*
+* ===  HAMBURGER SECTION  ===
+*/
+
 /* Hamburger button set to the left */
+
 .navbar-toggle.pull-left {
   margin-left: 15px;
     
 }
 
-
 /*  The right side of the top bar animates down.
     The middle bar fades out.
     The right side of the bottom bar animates up. */
 
-.navbar-toggle .icon-bar.bar-one {
-	  top: 6px;
+.navbar-toggle {
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px 6px 10px;
+    background: none;
+    
 }
 
-.navbar-toggle .icon-bar.bar-two {
-  	top: 6px;
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus{
+    background: none;
 }
 
 .navbar-toggle .icon-bar.bar-three {
@@ -27,25 +87,265 @@
 	  
 }
 
-.navbar-toggle .icon-bar.bar-one {
-    transition: .2s ease-in-out;
+.navbar-toggle .icon-bar.bar-one,
+.icon-bar.bar-two, .icon-bar.bar-three {
+    transition: 0.2s ease-in-out;
+    
 }
 
 /* Hamburger X */
 .navbar-toggle.open .icon-bar.bar-one {
-	  top:15px;
-	  transform: rotate(155deg);
+        top:12px;
+        transform: rotate(45deg);
+    
 }
 
 .navbar-toggle.open .icon-bar.bar-two {
 	   opacity:0;
 	   width:0;
+    
 }
 
 .navbar-toggle.open .icon-bar.bar-three {
 	  top: -12px;
-	  transform: rotate(-155deg);
+	  transform: rotate(-45deg);
+    
 }
+
+.navbar-toggle.open {
+    margin-top: 14px;
+    padding: 10px 10px 0px 10px;
+    
+}
+
+
+/*
+* ===   SECTIONS  ===
+*/
+
+/* carousel container element  */
+
+.carousel {
+    margin-top: 50px;
+
+}
+
+.carousel img {
+   margin: auto;
+   min-width: 100%;/* rectangular imgs at full width of the carousel  */
+    
+}
+
+
+/*
+* — second section - Services —
+*/
+
+div .services {
+     text-align: center;
+    
+}
+
+#services.pad-section h3, 
+#gallery.pad-section h3,
+#about.pad-section h3,
+#contact.pad-section h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+
+.services .glyphicon {
+    border: 2px solid #cc3279;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 45px;
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    color: #cc3279;
+
+}
+
+.services p {
+    margin-bottom: 25px;
+    
+}
+
+.additionalinfor {
+    background: url(../images/pexels-TableTop-265920.jpg) no-repeat center center fixed; 
+    display: table;
+    height: 700px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.additionalinfor .panel {
+    opacity: 0.85;
+    margin-top: 60px;
+    text-align: left;
+    
+}
+
+/*
+* — three section - Gallery —
+*/
+
+/* move close X button */
+.lb-data .lb-close {
+    margin-top: -550px;
+    margin-right: -50px;
+}
+
+.gallery img {
+    height: 200px;
+    width: 200px;
+
+}
+
+p.text {
+    font-size: 12px;
+    text-align: center;
+}
+
+/*
+* — fourth section - About —
+*/
+#pic1, #pic2, #pic3, #pic4 {
+    width: 125px;
+    Height: 125px;
+    border-style: solid;
+    border-color: #fac96c;
+    border-width: 2.5px;
+    margin-bottom: 20px;
+    
+}
+
+#about p{
+    text-align: left;
+    padding: 20px;
+    
+}
+
+
+/*
+* — fifth section - Contact —
+*/
+.red {
+    color:red;
+    
+    }
+
+.form-area {
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	
+}
+
+/*
+* — footer —
+*/
+footer {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+/* footer first link list  */
+.navbar-footer {
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: inherit;
+    border-radius: 0;
+    border: none;
+}
+
+/* footer center first link list  */
+footer .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+   
+}
+
+.nav.navbar-nav.footer li a {
+    color: #fac96c;
+}
+
+.nav.navbar-nav.footer a:hover {
+    color: #fff;
+    
+}
+
+
+.icon1 {
+    margin-right: 14px;
+    height: 25px;
+    width: 25px;
+}
+
+.icon2 {
+    margin-right: 16px;
+    height: 25px;
+    width: 25px;
+}
+
+.icon3  {
+    height: 25px;
+    width: 25px;
+    
+}
+
+.footerbar {
+    width: 55%;
+    height: 1px;
+    background-color: #fac96c;
+    color: #fac96c;
+    border: 0 none;
+    
+}
+
+
+#address {
+    color: #9d9d9d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
